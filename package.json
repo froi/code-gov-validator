@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/GSA/code-gov-validator/issues"
   },
-  "homepage": "https://github.com/GSA/code-gov-validator#readme"
+  "homepage": "https://github.com/GSA/code-gov-validator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "jsonfile": "^4.0.0",
+    "simple-rules-engine": "^1.0.2"
+  }
 }
