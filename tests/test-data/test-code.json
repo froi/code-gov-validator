@@ -1,0 +1,120 @@
+{
+  "version": "2.0.0",
+  "agency": "GSA",
+  "measurementType": {
+    "method": "modules"
+  },
+  "releases": [
+    {
+      "name": "Search.gov",
+      "description": "The core application powering the Search.gov service, formerly DigitalGov Search",
+      "permissions": {
+        "licenses": null,
+        "usageType": "governmentWideReuse",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA",
+        "Search.gov",
+        "search",
+        "SaaS"
+      ],
+      "contact": {
+        "email": "search@support.digitalgov.gov"
+      },
+      "repositoryURL": null,
+      "laborHours": 0,
+      "organization": "GSA"
+    },
+    {
+      "name": "Cron scripts",
+      "description": "Cron scripts for the DigitalGov Search system.",
+      "permissions": {
+        "licenses": null,
+        "usageType": "governmentWideReuse",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA",
+        "DigitalGovSearch",
+        "search",
+        "cron"
+      ],
+      "contact": {
+        "email": "search@support.digitalgov.gov"
+      },
+      "repositoryURL": null,
+      "laborHours": 0,
+      "organization": "GSA"
+    },
+    {
+      "name": "mobile-fu",
+      "description": "Automatically detect mobile requests from mobile devices in your Rails application.",
+      "permissions": {
+        "licenses": [
+          {
+            "URL": "https://api.github.com/licenses/mit",
+            "name": "MIT"
+          }
+        ],
+        "usageType": "openSource",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA"
+      ],
+      "contact": {
+        "email": "gsa-github.support@gsa.gov"
+      },
+      "repositoryURL": "https://github.com/GSA/mobile-fu",
+      "laborHours": 0,
+      "organization": "GSA"
+    },
+    {
+      "name": "rails-google-visualization-plugin",
+      "description": "A rails plugin that provides simple block helpers to introduce google visualizations (gap minder)",
+      "permissions": {
+        "licenses": [
+          {
+            "URL": "https://api.github.com/licenses/gpl-3.0",
+            "name": "GPL-3.0"
+          }
+        ],
+        "usageType": "openSource",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA"
+      ],
+      "contact": {
+        "email": "gsa-github.support@gsa.gov"
+      },
+      "repositoryURL": "https://github.com/GSA/rails-google-visualization-plugin",
+      "laborHours": 0,
+      "organization": "GSA"
+    },
+    {
+      "name": "apache-log-parser",
+      "description": "rails plugin for parsing apache log",
+      "permissions": {
+        "licenses": [
+          {
+            "URL": "https://api.github.com/licenses/mit",
+            "name": "MIT"
+          }
+        ],
+        "usageType": "openSource",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA"
+      ],
+      "contact": {
+        "email": "gsa-github.support@gsa.gov"
+      },
+      "repositoryURL": "https://github.com/GSA/apache-log-parser",
+      "laborHours": 0,
+      "organization": "GSA"
+    }
+  ]
+}
