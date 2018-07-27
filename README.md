@@ -2,7 +2,7 @@
 
 Schema validation package for Code.gov.
 
-This project is still a work in progress and is not ready for use. Feedback, issues, and PR are welcome. Please use the [project's issues area](https://github.com/gsa/issues/new) or contact us directly at code@gsa.gov.
+This project is still a work in progress and is not ready for use. Feedback, issues, and PR are welcome. Please use the [project's issues area](https://github.com/gsa/code-gov-validator/issues) to submit andy feedback or problems you might be experiencing with the project. You can also contact us directly at code@gsa.gov for any general Code.gov related inquiries.
 
 # Why is this being worked on
 
@@ -14,6 +14,6 @@ Yes it is. The base for this code base is from [code-gov-api](https://github.com
 
 # Roadmap for this project
 
-1. Get it to work to code-gov-api in production as a package replacement for the validator service
+1. Get it to work to [code-gov-api](https://github.com/gsa/code-gov-api) in production as a package replacement for the validator service
 2. Code clean up and maybe a bit of project restructuring.
 3. Create a CLI to allow manual execution on local files.
