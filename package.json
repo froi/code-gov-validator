@@ -4,7 +4,7 @@
   "description": "Schema validation package for Code.gov",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec tests"
+    "test": "./node_modules/.bin/nyc mocha --reporter spec tests"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,13 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^5.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   },
   "dependencies": {
     "ajv": "^6.5.2",
     "jsonfile": "^4.0.0",
+    "lodash": "^4.17.10",
     "simple-rules-engine": "^1.0.2"
   }
 }
