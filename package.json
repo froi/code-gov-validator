@@ -1,0 +1,24 @@
+{
+  "name": "code-gov-validator",
+  "version": "0.0.1",
+  "description": "Schema validation package for Code.gov",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/code-gov-validator.git"
+  },
+  "keywords": [
+    "Json schema",
+    "schema validator",
+    "code.gov"
+  ],
+  "author": "Froilan Irizarry",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GSA/code-gov-validator/issues"
+  },
+  "homepage": "https://github.com/GSA/code-gov-validator#readme"
+}
