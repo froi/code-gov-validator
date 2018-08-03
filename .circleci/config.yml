@@ -90,6 +90,6 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-              ignore: /^v.*-rc/
+              ignore: /^v.*-.*/
             branches:
               ignore: /.*/
