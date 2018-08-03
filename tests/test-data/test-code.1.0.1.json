@@ -1,0 +1,31 @@
+{
+  "agency": "GSA",
+  "measurementType": {
+    "method": "modules"
+  },
+  "projects": [
+    {
+      "name": "apache-log-parser",
+      "description": "rails plugin for parsing apache log",
+      "permissions": {
+        "licenses": [
+          {
+            "URL": "https://api.github.com/licenses/mit",
+            "name": "MIT"
+          }
+        ],
+        "usageType": "openSource",
+        "exemptionText": null
+      },
+      "tags": [
+        "GSA"
+      ],
+      "contact": {
+        "email": "gsa-github.support@gsa.gov"
+      },
+      "repositoryURL": null,
+      "laborHours": 0,
+      "organization": "GSA"
+    }
+  ]
+}
