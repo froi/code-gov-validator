@@ -81,13 +81,10 @@ class Validator {
     if (repo.hasOwnProperty('permissions')) {
       return repo.permissions.usageType !== 'openSource';
     }
-    if (repo.hasOwnProperty('openSourceProject')) {
-      return repo.openSourceProject !== 1;
-    }
     return false;
   }
   _propertyMissing(property, obj) {
-    if (obj.params) {
+    if (obj.params && obj.params.hasOwnProperty('missingProperty')) {
       return obj.params.missingProperty === property;
     }
     return false;
@@ -104,22 +101,25 @@ class Validator {
       if (this._isNotOpenSource(repo)) {
         const repoUrlMissingWaring = this._propertyMissing('repositoryURL', validationItem) ||
           this._propertyMissing('repository', validationItem);
+
         if (repoUrlMissingWaring) {
           return false;
         }
+        if(validationItem.dataPath === '.repositoryURL') {
+          return repo.repositoryURL === null || repo.repositoryURL === undefined
+            ? false
+            : true;
+        }
 
-        let dataPath = validationItem.dataPath === '.repositoryURL' || validationItem.dataPath === '.repository';
-        const repositoryUrlNull = repo.repositoryURL || repo.repository;
-        if (dataPath && repositoryUrlNull) {
-          // logger.info("removing validation item for closed source repo with license===null");
+        const licencesMissing = this._propertyMissing('licences', validationItem);
+        if(licencesMissing) {
           return false;
         }
 
-        dataPath = validationItem.dataPath === '.permissions.licenses' || validationItem.dataPath === '.license';
-        const missingLicense = (repo.permissions && repo.permissions.licenses) || repo.license;
-        if (dataPath && missingLicense) {
-          // logger.info("removing validation item for closed source repo with licenses===null");
-          return false;
+        if(validationItem.dataPath === '.permissions') {
+          return repo.permissions.licenses === null || repo.permissions.licenses === undefined
+            ? false
+            : true;
         }
       }
 
