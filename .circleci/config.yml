@@ -89,7 +89,7 @@ workflows:
             - test
           filters:
             tags:
-              only: /^v*/
-              ignore: /^v*-rc/
+              only: /^v.*/
+              ignore: /^v.*-rc/
             branches:
               ignore: /.*/
