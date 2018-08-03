@@ -45,9 +45,6 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: install-node-modules
-          command: npm install
-      - run:
           name: run-test
           command: npm test
       - save_cache:
@@ -91,6 +88,6 @@ workflows:
           filters:
             tags:
               only: /^v*/
-              ignore: /*-rc/
+              ignore: /^v*-rc/
             branches:
               ignore: /.*/
