@@ -32,6 +32,8 @@ jobs:
     environment:
       NODE_ENV: "testing"
     steps:
+      - attach_workspace:
+          at: ~/code-gov-validator
       - run:
           name: download-cc-test-reporter
           command: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -45,7 +47,7 @@ jobs:
       - run:
           name: install-node-modules
           command: npm install
-       - run:
+      - run:
           name: run-test
           command: npm test
       - save_cache:
@@ -66,6 +68,8 @@ jobs:
   publish:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/code-gov-validator
       - run:
           name: Authenticate with NPM registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
