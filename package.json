@@ -4,7 +4,9 @@
   "description": "Schema validation package for Code.gov",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/nyc mocha --reporter spec tests"
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "./node_modules/.bin/nyc mocha --reporter spec tests",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
