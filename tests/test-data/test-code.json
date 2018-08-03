@@ -53,7 +53,7 @@
       "permissions": {
         "licenses": [
           {
-            "URL": "https://api.github.com/licenses/mit",
+            "URL": "alsdkfjal;sdkfjasdl;fkj",
             "name": "MIT"
           }
         ],
@@ -74,12 +74,6 @@
       "name": "rails-google-visualization-plugin",
       "description": "A rails plugin that provides simple block helpers to introduce google visualizations (gap minder)",
       "permissions": {
-        "licenses": [
-          {
-            "URL": "https://api.github.com/licenses/gpl-3.0",
-            "name": "GPL-3.0"
-          }
-        ],
         "usageType": "openSource",
         "exemptionText": null
       },
@@ -89,7 +83,6 @@
       "contact": {
         "email": "gsa-github.support@gsa.gov"
       },
-      "repositoryURL": "https://github.com/GSA/rails-google-visualization-plugin",
       "laborHours": 0,
       "organization": "GSA"
     },
@@ -97,12 +90,7 @@
       "name": "apache-log-parser",
       "description": "rails plugin for parsing apache log",
       "permissions": {
-        "licenses": [
-          {
-            "URL": "https://api.github.com/licenses/mit",
-            "name": "MIT"
-          }
-        ],
+        "licenses": null,
         "usageType": "openSource",
         "exemptionText": null
       },
@@ -112,7 +100,7 @@
       "contact": {
         "email": "gsa-github.support@gsa.gov"
       },
-      "repositoryURL": "https://github.com/GSA/apache-log-parser",
+      "repositoryURL": null,
       "laborHours": 0,
       "organization": "GSA"
     }
