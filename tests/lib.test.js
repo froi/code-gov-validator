@@ -9,7 +9,6 @@ const {
   getSchemaValidators,
   getCleaner
 } = require('../lib');
-const { getValidator } = require('../index');
 
 describe('Libs tests', function() {
   let codeJson;
@@ -72,25 +71,3 @@ describe('Libs tests', function() {
     dedupped.length.should.be.equal(1);
   });
 });
-
-describe('Validator', function() {
-  let codeJson;
-
-  before(function() {
-    codeJson = JsonFile.readFileSync(path.join(__dirname, 'test-data/test-code.json'));
-  });
-  it('should return a validator for schema version 2.0.0', function() {
-    const validator = getValidator(codeJson);
-
-    validator._version.should.be.equal('2.0.0');
-
-    Object.keys(validator.validators).length.should.be.equal(1);
-    Object.keys(validator.validators.repo).length.should.be.equal(3);
-
-    validator.validators.repo.relaxed.should.be.a('function');
-    validator.validators.repo.strict.should.be.a('function');
-    validator.validators.repo.enhanced.should.be.a('function');
-    validator.cleaner.should.be.a('function');
-  });
-});
-
