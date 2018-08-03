@@ -71,7 +71,7 @@ jobs:
           at: ~/code-gov-validator
       - run:
           name: Authenticate with NPM registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/code-gov-validator/.npmrc
       - deploy:
           name: Publish to NPM registry
           command: npm publish
