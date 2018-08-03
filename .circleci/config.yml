@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/code-gov-validator
   docker:
-    - image: circleci/node:8.11.3
+    - image: circleci/node:10.8.0
 
 jobs:
   build:
