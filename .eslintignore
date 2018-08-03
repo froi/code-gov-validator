@@ -4,3 +4,4 @@ lcov/
 .vscode/
 .nyc_output/
 .circleci/
+.github/
