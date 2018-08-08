@@ -128,18 +128,18 @@ class Validator {
   }
 
   /**
-   * Validate a given repo's structure.
-   * @param {object} repo
-   * @param {object} agency
+   * Validate a given repo's metadata structure.
+   * @param {object} repo Repository to validate for a given agency
+   * @param {object} agency Agency metadata
+   * @returns {object} With validation result.
    */
   async validateRepo(repo, agency) {
-    // logger.debug(`Validating repo data for ${repo.name} (${repo.repoID})...`);
 
     let result = {
-      'repoID': repo.repoID,
-      'agency': agency.name,
-      'organization': repo.organization,
-      'project_name': repo.name,
+      repoID: repo.repoID,
+      agency: agency.name,
+      organization: repo.organization,
+      project_name: repo.name,
       issues: {
         enhancements: [],
         warnings: [],
