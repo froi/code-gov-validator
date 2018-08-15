@@ -2,7 +2,7 @@
 
 Schema validation package for Code.gov.
 
-This project is still a work in progress and is not ready for use. Feedback, issues, and PR are welcome. Please use the [project's issues area](https://github.com/gsa/code-gov-validator/issues) to submit andy feedback or problems you might be experiencing with the project. You can also contact us directly at code@gsa.gov for any general Code.gov related inquiries.
+This project is still a work in progress and is not ready for use. Feedback, issues, and PR are welcome. Please use the [project's issues area](https://github.com/gsa/code-gov-validator/issues) to submit any feedback or problems you might be experiencing with the project. You can also contact us directly at code@gsa.gov for any general Code.gov related inquiries.
 
 # Why is this being worked on
 
