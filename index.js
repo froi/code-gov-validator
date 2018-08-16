@@ -63,7 +63,7 @@ class Validator {
   }
 
   /**
-   * Validate the repo with a enhaced json schema.
+   * Validate the repo with a enhanced json schema.
    * @param {Array} enhancements
    * @param {object} repo
    * @param {Array} errors
@@ -106,9 +106,7 @@ class Validator {
           return false;
         }
         if(validationItem.dataPath === '.repositoryURL') {
-          return repo.repositoryURL === null || repo.repositoryURL === undefined
-            ? false
-            : true;
+          return !(repo.repositoryURL === null || repo.repositoryURL === undefined);
         }
 
         const licencesMissing = this._propertyMissing('licences', validationItem);
@@ -117,9 +115,7 @@ class Validator {
         }
 
         if(validationItem.dataPath === '.permissions') {
-          return repo.permissions.licenses === null || repo.permissions.licenses === undefined
-            ? false
-            : true;
+          return !(repo.permissions.licenses === null || repo.permissions.licenses === undefined);
         }
       }
 
