@@ -18,7 +18,9 @@ function getValidator(codeJson) {
 class Validator {
 
   constructor(version) {
-    this._version = version;
+    this._version = version.match(/(2\.0)(\.0)?/)
+      ? '2.0.0'
+      : version;
     this.validators = {};
     this.PATH_TO_SCHEMAS = path.join(__dirname, 'lib/schemas');
     this.SCHEMAS = ['repo'];
