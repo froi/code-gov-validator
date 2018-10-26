@@ -1,6 +1,6 @@
 {
   "name": "@code.gov/code-gov-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Schema validation package for Code.gov",
   "main": "index.js",
   "scripts": {
