@@ -25,7 +25,7 @@
   "homepage": "https://github.com/GSA/code-gov-validator#readme",
   "devDependencies": {
     "chai": "^4.1.2",
-    "eslint": "^5.2.0",
+    "eslint": "^6.2.2",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
   },
