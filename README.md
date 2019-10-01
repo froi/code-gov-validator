@@ -17,3 +17,10 @@ Yes it is. The base for this code base is from [code-gov-api](https://github.com
 1. Get it to work to [code-gov-api](https://github.com/gsa/code-gov-api) in production as a package replacement for the validator service
 2. Code clean up and maybe a bit of project restructuring.
 3. Create a CLI to allow manual execution on local files.
+
+# Questions
+
+Twitter : [@CodeDotGov](https://twitter.com/codedotgov)  
+Email : code@gsa.gov  
+LinkedIn : [code-gov](https://www.linkedin.com/company/code-gov/)  
+Join our #opensource-public [Slack channel](https://chat.18f.gov/)
