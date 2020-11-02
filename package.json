@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "ajv": "^6.12.3",
-    "jsonfile": "^4.0.0",
+    "jsonfile": "^6.1.0",
     "lodash": "^4.17.15",
     "simple-rules-engine": "^1.0.2",
     "snyk": "^1.316.1"
